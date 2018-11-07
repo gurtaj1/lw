@@ -1,0 +1,8 @@
+static/*
+test-reports/*
+app/vendor.js
+app/**/*.fixture.js
+*.scss
+*.css
+*.html
+tests/coverage

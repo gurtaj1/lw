@@ -1,0 +1,78 @@
+@import '~normalize.css/normalize.css';
+@import '~reset-css/reset.css';
+@import 'shared/styles/variables';
+@import 'shared/styles/colours';
+@import 'shared/styles/grid';
+@import 'shared/styles/media-queries';
+@import 'shared/styles/mixins';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: $color-black;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: underline;
+    color: $color-black;
+  }
+}
+
+button {
+  background: none;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  padding: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  cursor: pointer;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+.content-wrapper {
+  @include clearfix;
+  margin: 0 auto;
+  max-width: $container-max-width;
+
+  &__inner {
+    float: left;
+    width: $mobile-width-gutter;
+    margin: 0 $mobile-gutter;
+
+    @include mq-tablet {
+      width: $tablet-width-gutter;
+      margin: 0 $tablet-gutter;
+    }
+
+    &--relative {
+      position: relative;
+    }
+
+    @include mq-large-desktop {
+      width: 100%;
+      margin: 0;
+    }
+  }
+}

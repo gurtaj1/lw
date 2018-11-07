@@ -1,0 +1,41 @@
+{
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-recommended"
+  ],
+  "plugins": [
+    "stylelint-scss"
+  ],
+  "rules": {
+    "at-rule-empty-line-before": null,
+    "at-rule-no-unknown": null,
+    "block-closing-brace-newline-after": null,
+    "color-hex-case": "upper",
+    "color-hex-length": "long",
+    "declaration-block-no-redundant-longhand-properties": null,
+    "declaration-block-no-shorthand-property-overrides": null,
+    "declaration-colon-newline-after": null,
+    "declaration-empty-line-before": null,
+    "function-whitespace-after": null,
+    "max-empty-lines": 2,
+    "number-leading-zero": null,
+    "property-no-unknown": [true, {"ignoreProperties": ["text-decoration-skip-ink"]}],
+    "scss/at-extend-no-missing-placeholder": true,
+    "scss/at-import-no-partial-leading-underscore": true,
+    "scss/at-mixin-argumentless-call-parentheses": "never",
+    "scss/dollar-variable-colon-space-after": "always",
+    "scss/dollar-variable-colon-space-before": "never",
+    "scss/dollar-variable-empty-line-before": ["always", {"except": ["after-dollar-variable", "after-comment"]}],
+    "scss/dollar-variable-no-missing-interpolation": true,
+    "scss/double-slash-comment-inline": "never",
+    "scss/double-slash-comment-whitespace-inside": "always",
+    "scss/selector-no-redundant-nesting-selector": true,
+    "selector-pseudo-class-no-unknown": [true, {
+      "ignorePseudoClasses": ["global"]
+    }],
+    "selector-type-no-unknown": [true, {
+      "ignore": ["custom-elements", "default-namespace"]
+    }],
+    "value-list-comma-newline-after": null
+  }
+}

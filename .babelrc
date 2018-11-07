@@ -1,0 +1,19 @@
+{
+  "presets": [
+    ["env", {
+      "targets": {
+        "browsers": "last 2 versions, > 1%, not dead"
+      }
+    }],
+    "react"
+  ],
+  "plugins": [
+    ["transform-object-rest-spread", { "useBuiltIns": true }],
+    "syntax-dynamic-import"
+  ],
+  "env": {
+    "test": {
+      "plugins": ["dynamic-import-node"]
+    }
+  }
+}
