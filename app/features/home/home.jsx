@@ -42,7 +42,9 @@ export default class Home extends Component {
   render () {
     return (
       <div className={styles['home']}>
-        Your Balance: {`£${this.state.balance}`}
+        <div className={styles['home__balance']}>
+          Your Balance: {`£${this.state.balance}`}
+        </div>
         <div className={styles['home__balance-buttons']}>
           <button onClick={this.decreaseBalance}>
             -
