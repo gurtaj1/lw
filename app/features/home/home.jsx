@@ -43,7 +43,7 @@ export default class Home extends Component {
     return (
       <div className={styles['home']}>
         Your Balance: {`£${this.state.balance}`}
-        <div>
+        <div className={styles['balance-buttons']}>
           <button onClick={this.decreaseBalance}>
             -
           </button>

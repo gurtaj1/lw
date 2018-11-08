@@ -1,0 +1,37 @@
+{
+  "collectCoverageFrom": [
+    "app/**/*.{js,jsx}",
+    "!app/client/shared/libraries/**",
+    "!app/**/*.fixture.js",
+    "!app/**/index.js",
+    "!app/vendor.js"
+  ],
+  "coverageDirectory": "test-reports/unit-tests/coverage",
+  "coverageReporters": ["cobertura", "lcov", "text"],
+  "coverageThreshold": {
+    "global": 80
+  },
+  "modulePaths": [
+    "app"
+  ],
+  "moduleNameMapper": {
+    "\\.(css|scss)$": "identity-obj-proxy"
+  },
+  "reporters": [
+    "default",
+    ["jest-junit", {
+      "suiteName": "London Stations Unit Tests",
+      "output": "./test-reports/unit-tests/junit-report/junit.xml"
+    }]
+  ],
+  "setupFiles": [
+    "raf/polyfill",
+    "<rootDir>/setup-tests.js",
+    "jest-localstorage-mock"
+  ],
+  "transform": {
+    "\\.jsx?$": "babel-jest",
+    "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/jest.asset-transformer.js"
+  },
+  "testURL": "http://localhost/"
+}
