@@ -2,7 +2,7 @@
 
 ## Basic instructions
 
-Clone this repo to your machine and run it locally by running the command `npn run serve`. The script is already setup to work on both mac and windows machines.
+Clone this repo to your machine and run it locally by running the command `npm run serve`. The script is already setup to work on both mac and windows machines.
 
 ## Method
 
