@@ -1,10 +1,10 @@
-import HomeContainer from 'features/home/home-container';
+import Home from 'features/home/home';
 
 const routes = [
     {
         path: '/',
         exact: true,
-        component: HomeContainer
+        component: Home
     }
 ];
 
