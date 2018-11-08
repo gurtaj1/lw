@@ -57,14 +57,14 @@ describe('features.home', () => {
       it('should call decreaseBalance when the minus button is clicked', () => {
         const spiedFunction = jest.spyOn(Home.prototype, 'decreaseBalance');
         const wrapper = shallow(<Home />);
-        wrapper.find('.balance-buttons').childAt(0).simulate('click');
+        wrapper.find('.home__balance-buttons').childAt(0).simulate('click');
 
         expect(spiedFunction).toHaveBeenCalled();
       });
 
       it('should decrease state balance when decreaseBalance() is called', () => {
         const wrapper = shallow(<Home />);
-        wrapper.find('.balance-buttons').childAt(0).simulate('click');
+        wrapper.find('.home__balance-buttons').childAt(0).simulate('click');
 
         expect(wrapper.state('balance')).toBe(11);
       });
@@ -72,14 +72,14 @@ describe('features.home', () => {
       it('should call increaseBalance when the plus button is clicked', () => {
         const spiedFunction = jest.spyOn(Home.prototype, 'increaseBalance');
         const wrapper = shallow(<Home />);
-        wrapper.find('.balance-buttons').childAt(1).simulate('click');
+        wrapper.find('.home__balance-buttons').childAt(1).simulate('click');
 
         expect(spiedFunction).toHaveBeenCalled();
       });
 
       it('should increase state balance when increaseBalance() is called', () => {
         const wrapper = shallow(<Home />);
-        wrapper.find('.balance-buttons').childAt(1).simulate('click');
+        wrapper.find('.home__balance-buttons').childAt(1).simulate('click');
 
         expect(wrapper.state('balance')).toBe(13);
       });

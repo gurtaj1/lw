@@ -21,7 +21,7 @@ ShallowWrapper {
         "Your Balance: ",
         "£12",
         <div
-          className="balance-buttons"
+          className="home__balance-buttons"
         >
           <button
             onClick={[Function]}
@@ -58,7 +58,7 @@ ShallowWrapper {
               +
             </button>,
           ],
-          "className": "balance-buttons",
+          "className": "home__balance-buttons",
         },
         "ref": null,
         "rendered": Array [
@@ -102,7 +102,7 @@ ShallowWrapper {
           "Your Balance: ",
           "£12",
           <div
-            className="balance-buttons"
+            className="home__balance-buttons"
           >
             <button
               onClick={[Function]}
@@ -139,7 +139,7 @@ ShallowWrapper {
                 +
               </button>,
             ],
-            "className": "balance-buttons",
+            "className": "home__balance-buttons",
           },
           "ref": null,
           "rendered": Array [
